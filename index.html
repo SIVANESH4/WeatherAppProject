@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-section">
+            <input type="text" spellcheck="false" class="search-bar" placeholder="Enter city name">
+            <button class="search-icon">
+                <img src="/images/search.png" />
+            </button>
+        </div>
+        <p class="error">Invalid city/country name</p>
+        <div class="whole-section">
+            <div class="main-section">
+                <img src="/images/clear.png" class="images" />
+                <h1 class="celcius">20°C</h1>
+                <h1 class="city-name">TAMIL NADU</h1>
+            </div>
+            <div class="footer-section">
+                <div class="wind-section">
+                    <h3 style="font-family: monospace;">WIND</h3>
+                    <br>
+                    <div class="wind-speed">
+                        <img src="/images/wind.png" class="wind-icon">
+                        <p id="wind">30 km/h</p>
+                    </div>
+                </div>
+                <div class="humidity-section">
+                    <h3 style="font-family: monospace;">HUMIDITY</h3>
+                    <br>
+                    <div class="humidity-lvl"><img src="/images/humidity.png" class="humidity-icon">
+                        <p id="humidity">50%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="default-container">
+        <p class="title">WEATHER&nbsp;APP</p>
+        <div class="image-container">
+            <img src="/images/clear.png" class="default-img">
+            <img src="/images/clouds.png" class="default-img">
+            <img src="/images/drizzle.png" class="default-img">
+            <img src="/images/rain.png" class="default-img">
+            <img src="/images/snow.png" class="default-img">
+        </div>
+    </div>
+
+</body>
+<script src="/script.js"></script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</html>

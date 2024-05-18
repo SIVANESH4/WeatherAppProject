@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Freeman", sans-serif;
+    background: linear-gradient(to left, #052659, #7DA0CA)
+}
+
+.container {
+    width: 400px;
+    max-width: 600px;
+    height: auto;
+    margin-top: 50px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.40);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.search-bar {
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    padding: 10px 110px 10px 10px;
+    font-family: "Freeman", sans-serif;
+
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images {
+    width: 180px;
+    height: auto;
+}
+
+.celcius {
+    color: white;
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.city-name {
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: beige;
+    font-size: 30px;
+}
+
+.search-icon {
+    background-color: white;
+    border-radius: 50px;
+    padding: 7px 10px;
+    margin-bottom: -4px;
+    border: 0;
+    outline: 0;
+}
+
+.search-icon img {
+    width: 17px;
+    height: auto;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    color: white;
+    margin-top: 20px;
+}
+
+.whole-section {
+    display: none;
+}
+
+.wind-icon,
+.humidity-icon {
+    width: 30px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.wind-speed,
+.humidity-lvl {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.error {
+    color: white;
+    font-family: "Freeman", sans-serif;
+    font-weight: 100;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    display: none;
+}
+
+.default-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 30px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.40);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.image-container {
+    display: flex;
+    width: 170px;
+    animation: slide 7s infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+
+    25% {
+        transform: translateX(-200%);
+    }
+
+    50% {
+        transform: translateX(-450%);
+    }
+
+    75% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.title {
+    font-family: "Freeman", sans-serif;
+    font-size: 35px;
+    color: white;
+    margin: 30px 90px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 300px;
+        max-height: 440px;
+    }
+
+    .default-container {
+        max-width: 300px;
+        height: 310px;
+    }
+
+    .search-bar {
+        padding: 7px 50px 7px 10px;
+    }
+
+    .images {
+        width: 110px;
+        height: auto;
+    }
+
+    .celcius {
+        font-size: 40px;
+    }
+
+    .default-img {
+        width: 150px;
+        height: auto;
+    }
+
+    .image-container {
+        display: flex;
+        width: 130px;
+    }
+
+    .title {
+        font-size: 22px;
+        margin-top: -30px;
+        letter-spacing: 7px;
+    }
+}
